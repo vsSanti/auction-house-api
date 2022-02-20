@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/main/graphql/server.ts",
-    "lint": "eslint --ext .js,.ts .",
+    "lint:fix": "eslint 'src/**' --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "dependencies": {
