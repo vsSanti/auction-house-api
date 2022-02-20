@@ -1,10 +1,10 @@
 export default {
   Query: {
-    helloWorld: (parent: any, args: any, context: any) => {
+    helloWorld: () => {
       return {
         id: 1,
-        message: 'Hello World!'
-      }
-    }
-  }
-}
+        message: 'Hello World!',
+      };
+    },
+  },
+};

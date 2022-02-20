@@ -5,11 +5,9 @@ import typeDefs from './typeDefs';
 
 export const server = new ApolloServer({
   resolvers,
-  typeDefs
+  typeDefs,
 });
 
-const port = 3000;
-
-server.listen({ port }).then(({ url }) => {
+server.listen({ port: 3000 }).then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
