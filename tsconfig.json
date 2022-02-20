@@ -5,6 +5,11 @@
     "lib": ["esnext"],
     "strict": true,
     "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@/tests/*": ["tests/*"],
+      "@/*": ["src/*"],
+    },
     "outDir": "dist",
     "removeComments": true,
     "sourceMap": true,
